@@ -9,6 +9,6 @@ Most problems are amenable to Googling.
 
 The source code in [`main.tex`](main.tex) is self-documenting.
 
-To use this template, clone the repository and open files using tools suitable to your platform.
-* On departmental Linux workstations, use your favorite text editor, `bibtex`, and `pdflatex`.
+To use this template:
+* On departmental Linux workstations, fork and clone this repository, then use your favorite text editor, `bibtex`, and `pdflatex`.
 * On [Overleaf](https://www.overleaf.com/), upload a new project, using the zip file from the [latest release](https://github.com/whitmancsfaculty/advanced-project-report-template/releases) of this template.
