@@ -16,12 +16,8 @@
 \addbibresource{main.bib}
 
 
-% Fill in the report title, your name, and your supervisor's name below.
-\title{Advanced Project Report Template}
-\author{Your name as it is to appear on commencement program}
-\newcommand{\supervisor}{Your project supervisor's name}
-\date{}
-
+%import title, author name, and supervisor name
+\include{vitals}
 
 \begin{document}
 \begin{titlepage}
@@ -44,35 +40,9 @@ Whitman College
 \end{titlepage}
 
 
-
-
-\begin{titlepage} % Actually the signature page
-\begin{centering}
-
-\textit{Certificate of Approval}
-
-\vspace{0.5in}
-
-This is to certify that the accompanying advanced project report by \textbf{\theauthor} has been accepted in partial fulfillment of the requirements for graduation with Honors in Computer Science.
-
-\end{centering}
-
-\vspace{1in}
-
-\hfill
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{c}
-\hline
-\supervisor \\
-\hspace{2in}
-\end{tabular}
-
-\vfill
-Whitman College
-
-\today
-\end{titlepage}
-
+%JAS: 2020 directions are to have the approval page be a separate document - 
+%  uncomment to re-insert
+\include{signaturepage}
 
 
 \pagenumbering{arabic} % This is the start of the report proper
