@@ -1,8 +1,11 @@
 #This Makefile defines rules that are appropriate for pdflatex/biblatex
+#If the signature page does ever need to be a separate document, you 
+#  can accomplish this by explicitly using "make approval_doc.pdf", or 
+#  by uncommenting out the second target after "all"
 FILE = main
 SIGPAGE = approval_doc
 SUBS = vitals.tex signaturepage.tex
-all: $(FILE).pdf $(SIGPAGE).pdf
+all: $(FILE).pdf #$(SIGPAGE).pdf
 
 $(FILE).pdf: $(FILE).tex $(FILE).bib $(SUBS)
 	pdflatex $(FILE)
