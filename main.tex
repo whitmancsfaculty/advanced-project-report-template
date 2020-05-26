@@ -21,9 +21,9 @@
 
 \begin{document}
 \begin{titlepage}
-\pagenumbering{gobble} % Do not number the title page
 
 \maketitle % Displays the title and author
+\thispagestyle{empty} % Do not number the title page
 
 \begin{centering}
 
@@ -44,8 +44,8 @@ Whitman College
 %  change inclusion of this page
 \include{signaturepage}
 
-
 \pagenumbering{arabic} % This is the start of the report proper
+\thispagestyle{empty}  % Do not number page 1 
 
 \begin{abstract}
 This document illustrates the formatting requirements for a computer science advanced project report submitted to Penrose Library. The abstract should be a single paragraph of about 150 words, followed by a sentence giving the URL for your project source code repository.
