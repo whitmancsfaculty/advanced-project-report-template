@@ -7,8 +7,8 @@ SIGPAGE = approval_doc
 SUBS = vitals.tex signaturepage.tex
 all: $(FILE).pdf #$(SIGPAGE).pdf
 
-template.pdf: main.pdf
-	cp main.pdf template.pdf
+sample.pdf: main.pdf
+	cp main.pdf sample.pdf
 
 $(FILE).pdf: $(FILE).tex $(FILE).bib $(SUBS)
 	pdflatex $(FILE)
